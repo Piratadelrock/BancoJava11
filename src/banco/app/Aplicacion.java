@@ -12,6 +12,7 @@ public class Aplicacion {
 
     public static void main(String[] args) {
 
+
 // instancia de usuarios
         Persona emmanuelJose = new Persona();
         Persona alejandro = new Persona();
