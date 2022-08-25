@@ -1,5 +1,6 @@
 package banco.app;
 
+import banco.dominio.Banco;
 import banco.dominio.CuentaBancaria;
 import banco.dominio.Persona;
 import org.w3c.dom.ls.LSOutput;
@@ -12,15 +13,16 @@ public class Aplicacion {
 
     public static void main(String[] args) {
 
-
+        Banco bancolombia = new Banco("123897", "Bancolombia S.A");
 // instancia de usuarios
-        Persona emmanuelJose = new Persona();
-        Persona alejandro = new Persona();
+        Persona emmanuelJose = new Persona(1234,"Emmanuel Jose");
+        Persona alejandro = new Persona(321564,"alejandro");
 // instancia de cuentas
-        CuentaBancaria miCuenta = new CuentaBancaria();
-        CuentaBancaria cuentaAlejandro = new CuentaBancaria();
+        CuentaBancaria miCuenta = new CuentaBancaria( bancolombia,"Ahorros",emmanuelJose,"9875651",350000);
+        CuentaBancaria cuentaAlejandro = new CuentaBancaria(bancolombia,"Ahorros", alejandro, "97898",985000);
+
 // procesos creando la cuenta y dando los valores de la cuenta
-        emmanuelJose.nombre = "Emmanuel Jose";
+        emmanuelJose.nombre = "";
         miCuenta.titular = emmanuelJose;
         miCuenta.saldo = 316000;
         miCuenta.estado = "ACTIVA";

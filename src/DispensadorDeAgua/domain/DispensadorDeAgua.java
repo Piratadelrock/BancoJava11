@@ -1,4 +1,4 @@
-package Dispensador.domain;
+package DispensadorDeAgua.domain;
 
 public class DispensadorDeAgua {
     public long serial;

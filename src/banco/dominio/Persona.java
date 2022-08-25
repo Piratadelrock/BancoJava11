@@ -6,4 +6,8 @@ public class Persona {
     public String estadoCivil;
     public String genero;
 
+    public Persona(int cedula, String nombre) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+    }
 }
