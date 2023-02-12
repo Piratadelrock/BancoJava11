@@ -21,18 +21,7 @@ public class Aplicacion {
         CuentaBancaria miCuenta = new CuentaBancaria( bancolombia,"Ahorros",emmanuelJose,"9875651",350000);
         CuentaBancaria cuentaAlejandro = new CuentaBancaria(bancolombia,"Ahorros", alejandro, "97898",985000);
 
-// procesos creando la cuenta y dando los valores de la cuenta
-        emmanuelJose.nombre = "";
-        miCuenta.titular = emmanuelJose;
-        miCuenta.saldo = 316000;
-        miCuenta.estado = "ACTIVA";
-
-        alejandro.nombre = "Alejandro";
-        cuentaAlejandro.titular = alejandro;
-        cuentaAlejandro.saldo = 0;
-        cuentaAlejandro.estado = "ACTIVA";
-
-//        miCuenta.retirar(300000);
+        miCuenta.retirar(300000);
 
         System.out.println(miCuenta.consultarSaldo());
         System.out.println(cuentaAlejandro.consultarSaldo());

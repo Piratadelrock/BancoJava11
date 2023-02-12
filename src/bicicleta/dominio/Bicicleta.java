@@ -31,7 +31,6 @@ public class Bicicleta {
     }
 
     public String obtenerInformacion(){
-
         return "Serial: " + this.serial + "\n Marca: " + this.marca +
                 "\n Modelo: " + this.modelo + "\n Color: " + this.color + "\n Precio: " + this.precio + "\n Velocidad: "
                 + Math.round(this.velocidad) + "km/h";
@@ -41,6 +40,7 @@ public class Bicicleta {
     public void acelerar(double incremento){
         this.velocidad += incremento;
     }
+
     public boolean frenar(double decremento){
 
         if ((decremento + this.velocidad) > 0 ){

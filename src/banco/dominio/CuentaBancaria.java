@@ -3,7 +3,8 @@ package banco.dominio;
 import java.util.Date;
 
 public class CuentaBancaria {
-    //atributos
+
+//atributos this. para referirse a estos atributos
     public Banco banco;
     public String tipo; // si es de ahorros o corriente
     public Persona titular;
@@ -25,7 +26,9 @@ public class CuentaBancaria {
         this.estado = "ACTIVA";
     }
 
-    //metodos
+//metodos
+
+
     public String consultarSaldo() {
         return "Hola " + this.titular.nombre + ", Su saldo es: " + this.saldo;
     }
