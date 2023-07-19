@@ -1,6 +1,8 @@
 package bicicleta.dominio;
 
+//esto es basado en el modelo uml de bicicleta
 public class Bicicleta {
+    //atributos que serian las propiedades del objeto
     public long serial;
     public String marca;
     public String modelo;
@@ -8,6 +10,7 @@ public class Bicicleta {
     public long precio;
     public double velocidad;
 
+    //metodos
     public Bicicleta(long serial, String marca, String modelo, String color, long precio) {
         this.serial = serial;
         this.marca = marca;
@@ -34,6 +37,7 @@ public class Bicicleta {
         return "Serial: " + this.serial + "\n Marca: " + this.marca +
                 "\n Modelo: " + this.modelo + "\n Color: " + this.color + "\n Precio: " + this.precio + "\n Velocidad: "
                 + Math.round(this.velocidad) + "km/h";
+        //tambien se puede hacer un retorno de variable completa como String information = a todo lo que esta retornando y retornar la variable
 
     }
 

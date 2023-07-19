@@ -28,7 +28,6 @@ public class CuentaBancaria {
 
 //metodos
 
-
     public String consultarSaldo() {
         return "Hola " + this.titular.nombre + ", Su saldo es: " + this.saldo;
     }
@@ -57,7 +56,42 @@ public class CuentaBancaria {
 
         return this.retirar(valorAtransferir) && cuentaDestino.consignar(valorAtransferir);
 
+//        PROJECTO 2
+//        boolean retiro = this.retirar(dineroATransferir);
+//        if (retiro==true){
+//            boolean consigno = cuentaDestino.consignar(dineroATransferir);
+//            if (consigno == true){
+//                return true;
+//            }else{
+//                this.consignar(dineroATransferir);
+//                return false;
+//            }
+//        }else{
+//            return false;
+//        }
+
     }
+
+//    otros metodos
+
+//
+//    public void activar(){
+//        activa = true;
+//    }
+//
+//    public void inactivar(){
+//        activa = false;
+//    }
+//
+//    public String consultarSaldo(){
+//        return "Hola " + this.titular.nombre +", Su saldo es: " + this.saldo;
+//    }
+//
+//
+//
+//    public void mostrarSaldo(){
+//        System.out.println("El saldo de la cuenta "+ numero+ " es: $" + saldo);
+//    }
 
 }
 

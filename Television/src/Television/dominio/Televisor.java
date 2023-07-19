@@ -8,6 +8,8 @@ public class Televisor {
     public short canalSintonizado;
     public byte volumenActual;
 
+//recomendacion es crear el esqueleto de todos, sin necesidad de poner la logica
+    
     public void encender(){
         this.encendido = true;
     }
@@ -15,6 +17,7 @@ public class Televisor {
     public void apagar() {
         this.encendido = false;
     }
+
     public boolean cambiarCanal(short nuevoCanal){
         if (this.encendido){
             this.canalSintonizado = nuevoCanal;
